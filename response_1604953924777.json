@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "formularioId": 1,
+    "nombre": "Seccion-Formulario-01",
+    "descripcion": "Recoleccion informacion basica",
+    "orden": 1,
+    "estado": 1,
+    "camposSeccionFormulario": [
+      {
+        "id": 1,
+        "tipoCampo": "texto",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "null",
+        "descripcion": "Texto Nombre",
+        "marcador": "Nombre",
+        "propiedadId": "nombreId",
+        "preCargarDato": 0,
+        "nombre": "texto_nombre",
+        "etiqueta": "Nombre",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [
+          {
+            "id": 2,
+            "nombre": "Texto Vacio",
+            "campoDependenciaId": null,
+            "criterio": "Contiene",
+            "mensajeError": "El texto no contiene"
+          }
+        ],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 2,
+        "tipoCampo": "numero",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "",
+        "descripcion": "Edad",
+        "marcador": "Edad",
+        "propiedadId": "edadId",
+        "preCargarDato": 0,
+        "nombre": "numero_edad",
+        "etiqueta": "Edad",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [
+          {
+            "id": 3,
+            "nombre": "Mayor que",
+            "campoDependenciaId": null,
+            "criterio": "Mayor que",
+            "mensajeError": "El valor debe ser mayor"
+          }
+        ],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 3,
+        "tipoCampo": "lista",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "Servicio",
+        "descripcion": "Departamentos",
+        "marcador": "Departamento",
+        "propiedadId": "DepartamentosId",
+        "preCargarDato": 0,
+        "nombre": "departamentos",
+        "etiqueta": "Departamento",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [
+          {
+            "id": 7,
+            "nombre": "Requerido",
+            "campoDependenciaId": null,
+            "criterio": "Requerido",
+            "mensajeError": "Este valor es requerido"
+          }
+        ],
+        "fuenteUsuario": [],
+        "listaServicio": [
+          {
+            "id": 1,
+            "nombreServicio": "Departamentos",
+            "urlServicio": "UrlDepartamentos"
+          }
+        ],
+        "preCargaDato": []
+      },
+      {
+        "id": 5,
+        "tipoCampo": "lista",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "Lista",
+        "descripcion": "Nueva Lista",
+        "marcador": "Nueva Lista",
+        "propiedadId": "lista02Id",
+        "preCargarDato": 0,
+        "nombre": "nueva_lista",
+        "etiqueta": "Nueva Lista",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [
+          {
+            "id": 6,
+            "nombre": "Requerido",
+            "campoDependenciaId": null,
+            "criterio": "Requerido",
+            "mensajeError": "Este valor es requerido"
+          }
+        ],
+        "fuenteUsuario": [
+          {
+            "id": 5,
+            "llave": "lista-01",
+            "valor": "lista-01"
+          },
+          {
+            "id": 6,
+            "llave": "lista-02",
+            "valor": "lista-02"
+          },
+          {
+            "id": 7,
+            "llave": "lista-02",
+            "valor": "lista-02"
+          }
+        ],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 6,
+        "tipoCampo": "fecha",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "",
+        "descripcion": "Fecha",
+        "marcador": "Fecha de inicio",
+        "propiedadId": "Fecha...",
+        "preCargarDato": 0,
+        "nombre": "fecha_inicio",
+        "etiqueta": "Fecha",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 8,
+        "tipoCampo": "casilla",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "lista",
+        "descripcion": "CheckBox",
+        "marcador": "Casillas de verificación",
+        "propiedadId": "",
+        "preCargarDato": 0,
+        "nombre": "seleccione_varias",
+        "etiqueta": "Seleccionar Varias",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [
+          {
+            "id": 8,
+            "llave": "VRS-OPS-02",
+            "valor": "Varias-Opcion-02"
+          },
+          {
+            "id": 9,
+            "llave": "VRS-OPS-03",
+            "valor": "Varias-Opcion-03"
+          },
+          {
+            "id": 13,
+            "llave": "VRS-OPS-01",
+            "valor": "Varias-Opcion-01"
+          }
+        ],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 10,
+        "tipoCampo": "foto",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "",
+        "descripcion": "Foto",
+        "marcador": "Adjuntar Fotos",
+        "propiedadId": "...",
+        "preCargarDato": 0,
+        "nombre": "adjuntar_foto",
+        "etiqueta": "Foto",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 12,
+        "tipoCampo": "firma",
+        "seccionFormularioId": 1,
+        "fuenteDatos": "",
+        "descripcion": "firma",
+        "marcador": "Adjuntar Firma",
+        "propiedadId": "...",
+        "preCargarDato": 0,
+        "nombre": "adjuntar_firma",
+        "etiqueta": "Firma",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      }
+    ],
+    "validacion": null
+  },
+  {
+    "id": 2,
+    "formularioId": 1,
+    "nombre": "Seccion-Formulario-02",
+    "descripcion": "Recolección Información Educativa",
+    "orden": 2,
+    "estado": 1,
+    "camposSeccionFormulario": [
+      {
+        "id": 4,
+        "tipoCampo": "lista",
+        "seccionFormularioId": 2,
+        "fuenteDatos": "Lista",
+        "descripcion": "Lista personalizada",
+        "marcador": "Lista",
+        "propiedadId": "listaId",
+        "preCargarDato": 0,
+        "nombre": "lista",
+        "etiqueta": "Lista",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [
+          {
+            "id": 5,
+            "nombre": "Requerido",
+            "campoDependenciaId": null,
+            "criterio": "Requerido",
+            "mensajeError": "Este valor es requerido"
+          }
+        ],
+        "fuenteUsuario": [
+          {
+            "id": 2,
+            "llave": "lista-01",
+            "valor": "lista-01"
+          },
+          {
+            "id": 3,
+            "llave": "lista-02",
+            "valor": "lista-02"
+          },
+          {
+            "id": 4,
+            "llave": "lista-02",
+            "valor": "lista-02"
+          }
+        ],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 7,
+        "tipoCampo": "parrafo",
+        "seccionFormularioId": 2,
+        "fuenteDatos": "",
+        "descripcion": "Texto largo",
+        "marcador": "Descipción",
+        "propiedadId": "...",
+        "preCargarDato": 0,
+        "nombre": "descripción",
+        "etiqueta": "Descripcion",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 9,
+        "tipoCampo": "opcion",
+        "seccionFormularioId": 2,
+        "fuenteDatos": "lista",
+        "descripcion": "Opción",
+        "marcador": "Casillas de opciones",
+        "propiedadId": "",
+        "preCargarDato": 0,
+        "nombre": "seleccione_uno",
+        "etiqueta": "Seleccionar uno",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [
+          {
+            "id": 10,
+            "llave": "ONE-OPS-01",
+            "valor": "Una-Opcion-01"
+          },
+          {
+            "id": 11,
+            "llave": "ONE-OPS-02",
+            "valor": "Una-Opcion-02"
+          },
+          {
+            "id": 12,
+            "llave": "ONE-OPS-02",
+            "valor": "Una-Opcion-02"
+          }
+        ],
+        "listaServicio": [],
+        "preCargaDato": []
+      },
+      {
+        "id": 11,
+        "tipoCampo": "video",
+        "seccionFormularioId": 2,
+        "fuenteDatos": "",
+        "descripcion": "Video",
+        "marcador": "Adjuntar Video",
+        "propiedadId": "...",
+        "preCargarDato": 0,
+        "nombre": "adjuntar_video",
+        "etiqueta": "Video",
+        "campoOculto": 0,
+        "desabilitado": 0,
+        "requerido": 0,
+        "validacion": [],
+        "fuenteUsuario": [],
+        "listaServicio": [],
+        "preCargaDato": []
+      }
+    ],
+    "validacion": null
+  }
+]
